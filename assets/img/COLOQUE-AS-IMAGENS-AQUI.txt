@@ -1,0 +1,17 @@
+IMAGENS DAS PUBLICACOES
+=======================
+
+Salve aqui os arquivos das pecas, com EXATAMENTE estes nomes:
+
+  post-iceberg.jpg           A licitacao que voce ve e so a ponta do iceberg
+  post-33091.jpg             33.091 contratacoes em 12 meses
+  post-sala-teams.jpg        Infinitas possibilidades em uma sala
+  post-shows-itanhaem.jpg    Quanto a cidade gasta com shows
+  post-tempo-para-tudo.jpg   Ha tempo para tudo
+
+Formato: quadrado (1080x1080), .jpg ou .png (se usar .png, troque a
+extensao tambem no arquivo assets/data/posts.js).
+
+Enquanto o arquivo nao estiver aqui, o card mostra o post direto do
+Instagram. Assim que o arquivo aparecer, o site passa a usar a imagem
+boa sozinho, sem mexer em mais nada.
