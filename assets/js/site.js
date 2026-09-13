@@ -34,7 +34,7 @@
   function blocoEmbed(p) {
     var id = idInstagram(p.link);
     if (!id) return '<div class="capa">' + p.categoria + '</div>';
-    return '<div class="capa"><iframe src="https://www.instagram.com/p/' + id + '/embed" loading="lazy" scrolling="no" title="' + p.titulo + '"></iframe>' +
+    return '<div class="capa"><iframe src="https://www.instagram.com/p/' + id + '/embed" scrolling="no" title="' + p.titulo + '"></iframe>' +
            '<a class="cobertura" href="' + p.link + '" target="_blank" rel="noopener" aria-label="Abrir publicação"></a></div>';
   }
 
