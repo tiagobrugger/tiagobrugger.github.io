@@ -58,6 +58,16 @@ p{margin:0 0 1em}
 .hero .wrap{position:relative;z-index:1;max-width:900px}
 .hero h1{color:#fff}
 .hero .lead{color:#cdd7e1;max-width:62ch;font-size:1.15rem}
+.hero .wrap.hero-retrato{max-width:1060px}
+.hero-retrato{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:clamp(24px,5vw,56px);align-items:center}
+.hero-retrato .lead{max-width:56ch}
+.retrato{margin:0}
+.retrato img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;border-radius:18px;border:1px solid var(--line);box-shadow:0 24px 55px rgba(0,0,0,.38)}
+@media(max-width:820px){
+  .hero-retrato{grid-template-columns:1fr;justify-items:start;gap:26px}
+  .retrato{order:-1;width:170px}
+  .retrato img{border-radius:50%;aspect-ratio:1/1;object-position:50% 14%}
+}
 .selo{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);color:var(--verde-claro);border-radius:999px;padding:6px 14px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
 .frase{font-family:var(--serif);font-style:italic;color:var(--verde-claro);font-size:1.05rem;border-left:3px solid var(--verde);padding-left:16px;margin-top:26px;max-width:60ch}
 
