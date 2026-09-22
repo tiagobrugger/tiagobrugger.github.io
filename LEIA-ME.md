@@ -20,11 +20,15 @@ tecnologia.html   Comunicação unificada, salas híbridas, IA
 apae.html         APAE Itanhaém e comunidade
 conteudo.html     Carrossel de publicações por categoria
 contato.html      Canais de contato
+projeto-tcdf.html Projeto TCDF (página de projeto)
+projeto-bndes.html Projeto BNDES (página de projeto)
 404.html          Página de erro
 
-assets/css/estilo.css     Toda a identidade visual (navy + dourado)
+assets/css/estilo.css     Toda a identidade visual (navy + verde-água)
 assets/js/site.js         Menu, animações e carrossel
 assets/data/posts.js      >> É AQUI que se adiciona publicação <<
+assets/data/projetos.js   >> É AQUI que se adiciona card de projeto (página Atuação) <<
+assets/img/projetos/      Logos dos órgãos (e, depois, fotos dos projetos)
 assets/img/               Imagens e favicon
 ```
 
@@ -48,12 +52,23 @@ Blocos separados por vírgula; o último não leva vírgula. `imagem` pode ficar
 
 Depois: dois cliques em `PUBLICAR.bat`.
 
+## Como adicionar um projeto
+
+1. Copie `projeto-tcdf.html` com outro nome (ex.: `projeto-novo.html`) e troque os textos.
+2. Coloque o logo do órgão em `assets/img/projetos/` (PNG com fundo transparente).
+3. Em `assets/data/projetos.js`, acrescente um bloco apontando para a página nova.
+4. Inclua a página no `sitemap.xml`.
+
+Para esconder um equipamento da lista sem apagar, acrescente `class="oculto"` no item (`<li class="oculto">`).
+
 ## Como trocar textos
 
 Abra o `.html` da página no Bloco de Notas (ou VS Code), altere o texto entre as tags e salve.
 Não mexa nas tags `<div class="...">`, só no texto.
 
-## Domínio próprio (quando comprar)
+## Domínio próprio (já configurado: tiagobrugger.com.br)
+
+O `CNAME`, as tags canonical, o `sitemap.xml` e o `robots.txt` já apontam para `https://tiagobrugger.com.br/`. Os passos abaixo ficam como referência.
 
 1. Renomeie `CNAME.exemplo` para `CNAME` e deixe dentro só o domínio, ex.: `tiagobrugger.com.br`
 2. No painel do registrador (Registro.br, etc.), aponte:

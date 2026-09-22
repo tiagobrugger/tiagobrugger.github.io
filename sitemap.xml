@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tiagobrugger.github.io/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://tiagobrugger.github.io/sobre.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/atuacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/tecnologia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/apae.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/conteudo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/contato.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.github.io/projeto-tcdf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.github.io/projeto-bndes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tiagobrugger.com.br/sobre.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/atuacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/tecnologia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/apae.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/conteudo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/contato.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-tcdf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-bndes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
