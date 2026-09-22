@@ -192,3 +192,11 @@ section{padding:clamp(48px,7vw,84px) 0}
 .ficha dd{margin:0;color:var(--ink)}
 .nota-marcas{font-size:.82rem;color:var(--muted);margin-top:26px}
 .placa-sigla{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.06em;color:var(--navy-700)}
+
+/* Foto de produto nas páginas de projeto */
+.produto{display:grid;grid-template-columns:300px minmax(0,1fr);gap:clamp(20px,4vw,40px);align-items:start}
+.produto .grade{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.produto-foto{margin:0;text-align:center}
+.produto-foto img{width:100%;height:auto}
+.produto-foto figcaption{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+@media(max-width:860px){.produto{grid-template-columns:1fr}.produto-foto{max-width:260px;margin:0 auto 10px}}

@@ -68,6 +68,6 @@ window.PROJETOS = [
     orgao: "Procuradoria-Geral de Justiça do Maranhão",
     logo: "assets/img/projetos/pgjma.png",
     area: "Telefonia",
-    titulo: "Telefonia IP em escala para o Ministério Público"
+    titulo: "2.000 telefones IP para a migração do Ministério Público para PABX em nuvem"
   }
 ];
