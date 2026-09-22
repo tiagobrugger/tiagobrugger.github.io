@@ -166,3 +166,28 @@ section{padding:clamp(48px,7vw,84px) 0}
 .revelar{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .revelar.visivel{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.revelar{opacity:1;transform:none;transition:none}}
+
+/* ---------- Projetos na prática ---------- */
+.projeto-card{color:inherit}
+.projeto-card:hover{color:inherit}
+.post .capa.capa-logo{cursor:pointer;background:linear-gradient(145deg,var(--navy-900),var(--navy-700))}
+.placa-logo{display:flex;align-items:center;justify-content:center;background:var(--cream);border-radius:12px;padding:18px 22px;width:78%;height:150px;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.placa-logo img,.post .capa .placa-logo img{max-width:100%;max-height:112px;width:auto;height:auto;object-fit:contain}
+.hero-projeto .placa-logo img{max-height:126px}
+@media(max-width:720px){.hero-projeto .placa-logo img{max-height:90px}}
+.post .capa.capa-logo:hover img{transform:none}
+.projeto-card:hover .placa-logo{transform:translateY(-2px)}
+.placa-logo{transition:transform .25s ease}
+.hero-projeto{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(22px,4vw,44px);align-items:center}
+.hero-projeto .placa-logo{width:200px;height:170px;padding:22px}
+@media(max-width:720px){.hero-projeto{grid-template-columns:1fr}.hero-projeto .placa-logo{width:160px;height:130px}}
+.ambiente .kicker{color:var(--verde);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.equip{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.equip li{font-size:.8rem;background:var(--cream);color:var(--navy-700);border:1px solid rgba(11,47,55,.1);border-radius:999px;padding:4px 11px}
+.sec-escura .equip li{background:rgba(127,217,230,.1);color:var(--verde-claro);border-color:rgba(127,217,230,.25)}
+.oculto{display:none !important}
+.ficha{display:grid;gap:14px 28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:0}
+.ficha div{border-top:1px solid rgba(11,47,55,.15);padding-top:10px}
+.ficha dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);font-weight:700;margin-bottom:4px}
+.ficha dd{margin:0;color:var(--ink)}
+.nota-marcas{font-size:.82rem;color:var(--muted);margin-top:26px}

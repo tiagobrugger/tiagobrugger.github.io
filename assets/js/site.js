@@ -20,6 +20,24 @@
     alvos.forEach(function (a) { a.classList.add('visivel'); });
   }
 
+  // Projetos na prática (alimentado por assets/data/projetos.js)
+  var trilhoProj = document.getElementById('carrossel-projetos');
+  if (trilhoProj) {
+    var projetos = window.PROJETOS || [];
+    trilhoProj.innerHTML = projetos.length ? projetos.map(function (p) {
+      return '<a class="post projeto-card" href="' + p.pagina + '">' +
+        '<div class="capa capa-logo"><span class="placa-logo"><img src="' + p.logo + '" alt="' + p.orgao + '"></span></div>' +
+        '<div class="corpo"><span class="tag">' + p.area + '</span>' +
+        '<h3>' + p.titulo + '</h3><p>' + p.orgao + '</p>' +
+        '<span class="link">Ver projeto &rarr;</span></div></a>';
+    }).join('') : '<p class="lead">Nenhum projeto cadastrado. Edite o arquivo assets/data/projetos.js.</p>';
+    document.querySelectorAll('[data-rolar-projetos]').forEach(function (s) {
+      s.addEventListener('click', function () {
+        trilhoProj.scrollBy({ left: Number(s.dataset.rolarProjetos) * 320, behavior: 'smooth' });
+      });
+    });
+  }
+
   // Carrossel de conteúdo (alimentado por assets/data/posts.js)
   var trilho = document.getElementById('carrossel');
   if (!trilho) return;
