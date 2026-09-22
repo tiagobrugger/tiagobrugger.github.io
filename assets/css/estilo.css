@@ -191,3 +191,4 @@ section{padding:clamp(48px,7vw,84px) 0}
 .ficha dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);font-weight:700;margin-bottom:4px}
 .ficha dd{margin:0;color:var(--ink)}
 .nota-marcas{font-size:.82rem;color:var(--muted);margin-top:26px}
+.placa-sigla{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.06em;color:var(--navy-700)}

@@ -26,7 +26,7 @@
     var projetos = window.PROJETOS || [];
     trilhoProj.innerHTML = projetos.length ? projetos.map(function (p) {
       return '<a class="post projeto-card" href="' + p.pagina + '">' +
-        '<div class="capa capa-logo"><span class="placa-logo"><img src="' + p.logo + '" alt="' + p.orgao + '"></span></div>' +
+        '<div class="capa capa-logo">' + (p.logo ? '<span class="placa-logo"><img src="' + p.logo + '" alt="' + p.orgao + '"></span>' : '<span class="placa-logo placa-sigla">' + (p.sigla || '') + '</span>') + '</div>' +
         '<div class="corpo"><span class="tag">' + p.area + '</span>' +
         '<h3>' + p.titulo + '</h3><p>' + p.orgao + '</p>' +
         '<span class="link">Ver projeto &rarr;</span></div></a>';
