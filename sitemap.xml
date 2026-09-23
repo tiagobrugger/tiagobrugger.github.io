@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tiagobrugger.com.br/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://tiagobrugger.com.br/sobre.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/atuacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/tecnologia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/apae.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/conteudo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/contato.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-tcdf.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-bndes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-tjpa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-caesb.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-trt9.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tiagobrugger.com.br/projeto-pgjma.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tiagobrugger.com.br/sobre.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/atuacao.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/tecnologia.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/apae.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/conteudo.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/contato.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-tcdf.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-bndes.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-tjpa.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-caesb.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-trt9.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tiagobrugger.com.br/projeto-pgjma.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
