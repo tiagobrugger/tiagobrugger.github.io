@@ -220,3 +220,23 @@ section{padding:clamp(48px,7vw,84px) 0}
 .som-foto{margin:0;border-radius:18px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
 .som-foto img{display:block;width:100%;height:auto}
 @media(max-width:860px){.amb,.som{grid-template-columns:1fr}.amb:nth-child(even) .amb-foto{order:0}}
+
+/* ---------- Leva 2: bloco por público, bio, rodapé ---------- */
+section[id]{scroll-margin-top:76px}
+.grade a.card{display:block;color:inherit}
+.grade a.card h3{color:var(--navy-800)}
+.grade a.card .rotulo{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);font-weight:700;margin-bottom:8px}
+.grade a.card .mais{display:inline-block;margin-top:14px;color:var(--verde);font-weight:600;font-size:.92rem}
+.bio{border-left:3px solid var(--verde);padding-left:22px;max-width:74ch}
+.bio p{font-size:1.08rem;color:var(--ink)}
+.bio .nota{font-size:.95rem;color:var(--muted);margin-bottom:0}
+.cols-rodape{grid-template-columns:1.5fr 1.25fr 1.1fr 1fr}
+.rodape .col-marca p{max-width:34ch;margin:0 0 10px}
+.rodape .col-marca .marca{margin-bottom:14px}
+.rodape .col-marca .local{color:#7f93a6;font-size:.85rem}
+.rodape ul.duas{grid-template-columns:1fr 1fr;column-gap:18px}
+.rodape .fim a{color:var(--verde-claro)}
+.rodape .fim a:hover{color:#fff}
+@media(max-width:960px){.cols-rodape{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cols-rodape{grid-template-columns:1fr}}
+.rodape a.marca{color:#fff}
