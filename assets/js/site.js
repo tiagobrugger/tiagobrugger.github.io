@@ -69,7 +69,7 @@
     return '<article class="post">' + capa +
       '<div class="corpo"><span class="tag">' + p.categoria + '</span>' +
       '<h3>' + p.titulo + '</h3><p>' + (p.resumo || '') + '</p>' +
-      (p.link ? '<a class="link" href="' + p.link + '" target="_blank" rel="noopener">Ver publicação &rarr;</a>' : '') +
+      (p.link ? '<a class="link" data-goatcounter-click="clique-post-instagram" data-goatcounter-title="Ver publicação no Instagram" href="' + p.link + '" target="_blank" rel="noopener">Ver publicação &rarr;</a>' : '') +
       '</div></article>';
   }
 
