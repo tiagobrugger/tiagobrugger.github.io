@@ -240,3 +240,14 @@ section[id]{scroll-margin-top:76px}
 @media(max-width:960px){.cols-rodape{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.cols-rodape{grid-template-columns:1fr}}
 .rodape a.marca{color:#fff}
+
+/* Rodapé com 5 colunas (a regra .rodape .cols tem prioridade sobre .cols-rodape) */
+.rodape .cols.cols-rodape{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+/* ---------- Colunas de opinião ---------- */
+.meta-artigo{display:flex;flex-wrap:wrap;gap:6px 18px;color:#cdd7e1;font-size:.92rem;margin-top:22px}
+.meta-artigo strong{color:#fff;font-weight:600}
+.artigo{max-width:68ch;margin:0 auto}
+.artigo p{font-size:1.1rem;line-height:1.8;color:var(--ink);margin:0 0 1.35em}
+.autor{max-width:68ch;margin:44px auto 0;border-top:1px solid rgba(11,47,55,.15);padding-top:22px}
+.autor p{font-size:.95rem;color:var(--muted);margin:0}
+.autor strong{color:var(--ink)}

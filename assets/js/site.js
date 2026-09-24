@@ -38,6 +38,24 @@
     });
   }
 
+  // Colunas de opinião (alimentado por assets/data/colunas.js)
+  var listasColunas = document.querySelectorAll('[data-colunas]');
+  if (listasColunas.length) {
+    var meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+    var dataExtensa = function (iso) {
+      var p = String(iso || '').split('-');
+      return p.length === 3 ? Number(p[2]) + ' de ' + meses[Number(p[1]) - 1] + ' de ' + p[0] : '';
+    };
+    var colunas = (window.COLUNAS || []).slice().sort(function (a, b) { return a.data < b.data ? 1 : (a.data > b.data ? -1 : 0); });
+    listasColunas.forEach(function (el) {
+      var lim = Number(el.dataset.limite) || colunas.length;
+      el.innerHTML = colunas.length ? colunas.slice(0, lim).map(function (c) {
+        return '<a class="card" href="' + c.pagina + '"><div class="rotulo">' + c.categoria + ' · ' + dataExtensa(c.data) + '</div>' +
+          '<h3>' + c.titulo + '</h3><p>' + (c.resumo || '') + '</p><span class="mais">Ler coluna &rarr;</span></a>';
+      }).join('') : '<p class="lead">Nenhuma coluna cadastrada. Edite o arquivo assets/data/colunas.js.</p>';
+    });
+  }
+
   // Carrossel de conteúdo (alimentado por assets/data/posts.js)
   var trilho = document.getElementById('carrossel');
   if (!trilho) return;
