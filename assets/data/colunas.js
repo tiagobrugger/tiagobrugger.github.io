@@ -24,6 +24,13 @@
 
 window.COLUNAS = [
   {
+    pagina: "opiniao-consultoria-tecnica-acelera-licitacao.html",
+    titulo: "Conversar com o mercado antes de comprar evita pregão deserto e produto já obsoleto.",
+    categoria: "Licitações",
+    data: "2026-09-28",
+    resumo: "A aproximação entre consultores especializados e a equipe do órgão, antes da compra, transmite conhecimento tácito de mercado e reduz o risco de pregão deserto ou solução já obsoleta."
+  },
+  {
     pagina: "opiniao-especificacao-trava-processo.html",
     titulo: "Quando a especificação trava o processo antes da disputa.",
     categoria: "Licitações",
