@@ -36,7 +36,7 @@ window.PROJETOS = [
     orgao: "Banco Nacional de Desenvolvimento Econômico e Social",
     logo: "assets/img/projetos/bndes.png",
     area: "Videoconferência",
-    titulo: "Salas de reunião padronizadas em Microsoft Teams Rooms nas quatro localidades do banco"
+    titulo: "Salas de reunião padronizadas em Microsoft Teams Rooms (MTR) nas quatro localidades do banco"
   },
   {
     pagina: "projeto-tjpa.html",
