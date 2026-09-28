@@ -24,6 +24,13 @@
 
 window.COLUNAS = [
   {
+    pagina: "opiniao-especificacao-trava-processo.html",
+    titulo: "Quando a especificação trava o processo antes da disputa.",
+    categoria: "Licitações",
+    data: "2026-09-28",
+    resumo: "Uma exigência de certificação nacional para um equipamento por natureza internacional inabilitou todos os fornecedores e obrigou o órgão a recomeçar do zero. O processo não travou na disputa: travou na especificação."
+  },
+  {
     pagina: "opiniao-carona-ata-registro-de-precos.html",
     titulo: "Carona em ata de registro de preço: agilidade sem abrir mão da segurança jurídica.",
     categoria: "Licitações",
