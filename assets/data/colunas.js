@@ -24,6 +24,13 @@
 
 window.COLUNAS = [
   {
+    pagina: "opiniao-seguro-garantia-contratual.html",
+    titulo: "Seguro contratual: o mal-entendido mais comum que vejo nos processos",
+    categoria: "Licitações",
+    data: "2026-10-05",
+    resumo: "Seguro-garantia não é a garantia do fabricante. É segurança econômica para o órgão público, e a apólice tem prazo para ser apresentada."
+  },
+  {
     pagina: "opiniao-consultoria-tecnica-acelera-licitacao.html",
     titulo: "Conversar com o mercado antes de comprar evita pregão deserto e produto já obsoleto.",
     categoria: "Licitações",
