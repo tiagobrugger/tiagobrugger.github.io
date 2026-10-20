@@ -56,6 +56,30 @@
     });
   }
 
+  // Rodapé: as 3 colunas mais recentes + link para as demais (alimentado por assets/data/colunas.js)
+  var rodapeColunas = document.querySelectorAll('[data-rodape-colunas]');
+  if (rodapeColunas.length && (window.COLUNAS || []).length) {
+    var recentes = window.COLUNAS.slice().sort(function (a, b) { return a.data < b.data ? 1 : (a.data > b.data ? -1 : 0); }).slice(0, 3);
+    rodapeColunas.forEach(function (ul) {
+      ul.innerHTML = recentes.map(function (c) {
+        return '<li><a href="' + c.pagina + '">' + (c.rodape || c.titulo) + '</a></li>';
+      }).join('') + '<li><a href="opiniao.html">Ler as demais colunas &rarr;</a></li>';
+    });
+  }
+
+  // Rodapé: os 4 projetos mais recentes + link para todos (alimentado por assets/data/projetos.js)
+  var rodapeProjetos = document.querySelectorAll('[data-rodape-projetos]');
+  if (rodapeProjetos.length && (window.PROJETOS || []).length) {
+    var listaProj = window.PROJETOS.map(function (p, i) { return { p: p, i: i }; })
+      .sort(function (a, b) { var x = String(a.p.ano || ''), y = String(b.p.ano || ''); return x < y ? 1 : (x > y ? -1 : b.i - a.i); })
+      .slice(0, 4);
+    rodapeProjetos.forEach(function (ul) {
+      ul.innerHTML = listaProj.map(function (o) {
+        return '<li><a href="' + o.p.pagina + '">' + (o.p.rodape || o.p.sigla || o.p.orgao) + '</a></li>';
+      }).join('') + '<li><a href="atuacao.html#projetos">Ver todos os projetos &rarr;</a></li>';
+    });
+  }
+
   // Carrossel de conteúdo (alimentado por assets/data/posts.js)
   var trilho = document.getElementById('carrossel');
   if (!trilho) return;
