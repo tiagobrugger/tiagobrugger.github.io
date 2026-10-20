@@ -3,3 +3,10 @@ desktop.ini
 .DS_Store
 *.tmp
 ~$*
+
+# Arquivos internos: nunca publicar
+Claude outputs/
+*.xlsx
+*.xls
+*.csv
+*.docx
