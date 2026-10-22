@@ -203,7 +203,7 @@
     <span class="rotulo">Aulas online de IA prática</span>
     <h1>Pare de usar IA apenas para conversar e <em>faça ela trabalhar por você.</em></h1>
     <p class="apoio">Você já usa o ChatGPT, mas sente que ele ainda não mudou a sua rotina? Isso é mais comum do que parece: a maioria das pessoas usa IA só para conversar e tirar dúvidas. Nas minhas aulas, você aprende a fazer a IA trabalhar de verdade por você.</p>
-    <a class="botao" href="https://wa.me/5511975348956?text=Ol%C3%A1%2C%20Tiago!%20Vi%20a%20p%C3%A1gina%20das%20aulas%20de%20IA%20e%20quero%20agendar%20a%20conversa%20gratuita." target="_blank" rel="noopener">Agendar conversa gratuita</a>
+    <a class="botao" href="https://wa.me/5511975348956?text=Ol%C3%A1%2C%20Tiago!%20Vi%20a%20p%C3%A1gina%20das%20aulas%20de%20IA%20e%20quero%20agendar%20a%20conversa%20gratuita." target="_blank" rel="noopener" onclick="return conversaoWhatsAppAulas(this.href);">Agendar conversa gratuita</a>
     <p class="nota-botao">30 minutos, online, sem compromisso.</p>
   </div>
 </section>
@@ -300,7 +300,7 @@
   <div class="estreito">
     <h2>Traga uma tarefa que toma o seu tempo.</h2>
     <p>Na conversa gratuita, a gente descobre juntos como a IA pode resolver.</p>
-    <a class="botao" href="https://wa.me/5511975348956?text=Ol%C3%A1%2C%20Tiago!%20Vi%20a%20p%C3%A1gina%20das%20aulas%20de%20IA%20e%20quero%20agendar%20a%20conversa%20gratuita." target="_blank" rel="noopener">Agendar conversa gratuita</a>
+    <a class="botao" href="https://wa.me/5511975348956?text=Ol%C3%A1%2C%20Tiago!%20Vi%20a%20p%C3%A1gina%20das%20aulas%20de%20IA%20e%20quero%20agendar%20a%20conversa%20gratuita." target="_blank" rel="noopener" onclick="return conversaoWhatsAppAulas(this.href);">Agendar conversa gratuita</a>
   </div>
 </section>
 
@@ -308,6 +308,45 @@
   Tiago Brugger · <a href="https://tiagobrugger.com.br/">tiagobrugger.com.br</a>
 </footer>
 
+<!--
+  GOOGLE ADS: unico ponto a editar e a linha ADS_CONVERSAO (formato AW-ID/ROTULO).
+-->
+<script>
+  var ADS_CONVERSAO = 'AW-979721670/GiZWCI7Qm6UdEMa7ldMD'; // conversao "Treinamento IA"
+  var ADS_PRONTO = ADS_CONVERSAO.indexOf('XXXXXXXXX') === -1;
+
+  // Tag base do Google carregada so nesta pagina e so com ID real (o site nao tinha a tag instalada)
+  if (ADS_PRONTO) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    var ADS_ID = ADS_CONVERSAO.split('/')[0];
+    var g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + ADS_ID;
+    document.head.appendChild(g);
+    gtag('js', new Date());
+    gtag('config', ADS_ID);
+  }
+
+  function conversaoWhatsAppAulas(url) {
+    var aberto = false;
+    var abrir = function () {
+      if (aberto) return;
+      aberto = true;
+      window.open(url, '_blank', 'noopener');
+    };
+    if (ADS_PRONTO && typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': ADS_CONVERSAO,
+        'event_callback': abrir
+      });
+      setTimeout(abrir, 800); // garante a abertura se o callback falhar
+    } else {
+      abrir();
+    }
+    return false;
+  }
+</script>
 <script data-goatcounter="https://tiagobrugger.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
